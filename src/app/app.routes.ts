@@ -5,6 +5,8 @@ import {LoginComponent} from "./security/login/login.component";
 import {RegisterComponent} from "./security/register/register.component";
 import {AdminComponent} from "./home/admin/admin.component";
 import {UserComponent} from "./home/user/user.component";
+import {PaymentComponent} from "./home/payment/payment.component";
+import {ContactComponent} from "./home/contact/contact.component";
 
 export const routes: Routes = [
   {
@@ -35,6 +37,14 @@ export const routes: Routes = [
       {
         path: 'user',
         component: UserComponent
+      },
+      {
+        path:'payment',
+        component: PaymentComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
       }
     ]
   }
