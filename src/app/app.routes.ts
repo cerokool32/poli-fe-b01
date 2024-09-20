@@ -3,6 +3,8 @@ import {HomeComponent} from "./home/home.component";
 import {LandingComponent} from "./home/landing/landing.component";
 import {LoginComponent} from "./security/login/login.component";
 import {RegisterComponent} from "./security/register/register.component";
+import {AdminComponent} from "./home/admin/admin.component";
+import {UserComponent} from "./home/user/user.component";
 
 export const routes: Routes = [
   {
@@ -25,6 +27,14 @@ export const routes: Routes = [
       {
         path:'',
         component: LandingComponent
+      },
+      {
+        path: 'admin',
+        component: AdminComponent
+      },
+      {
+        path: 'user',
+        component: UserComponent
       }
     ]
   }

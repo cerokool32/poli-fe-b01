@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import {NgClass} from "@angular/common";
 
 @Component({
-  selector: 'app-landing',
+  selector: 'app-admin',
   standalone: true,
   imports: [
     NgClass
   ],
-  templateUrl: './landing.component.html',
-  styleUrl: './landing.component.scss'
+  templateUrl: './admin.component.html',
+  styleUrl: './admin.component.scss'
 })
-export class LandingComponent {
+export class AdminComponent {
   focus: any;
   focus1: any;
 
