@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/home",
+    "/home/admin",
+    "/home/contact",
+    "/home/payment",
+    "/home/user",
+    "/login",
+    "/register"
+  ]
+}
