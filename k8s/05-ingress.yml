@@ -1,0 +1,17 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: poli
+  namespace: marlon
+
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`poli.ingedata.co`)
+      kind: Rule
+      services:
+        - name: poli
+          port: 80
+  tls:
+    certResolver: letsencrypt

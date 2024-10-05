@@ -1,0 +1,29 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: poli
+  namespace: marlon
+  labels:
+    app: poli
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: poli
+  template:
+    metadata:
+      labels:
+        app: poli
+    spec:
+      containers:
+        - name: astroapp
+          image: git.it.ingedata.co/ngdt-it/poli-fe-bo1:latest
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 80
+      imagePullSecrets:
+        - name: gitea-registry-secret
+
+
